@@ -50,12 +50,19 @@
 </div>
 </div>
 <!--Fin de la navbar-->
+<div class="container">
 
 @yield('cuerpo')
 
+<hr>
+	<footer>
+		<div class="container">
+			<p class="navbar-text">Copyright © 2001-2014 The Cnk Group</p>
+		</div>
+	</footer>
 </div> <!--Fin del cuerpo de la pagina-->
 
-
+	
 
 </body>
 </html>

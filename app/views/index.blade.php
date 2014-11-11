@@ -135,7 +135,7 @@
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail">
 			  		
-					<img src="{{asset('images/BabyTux.png')}}" alt="..." width="200px" height="200px">
+					<img src="{{asset('images/BabyTux.png')}}" alt="...">
 
 					<div class="caption">
 						<h3>{{ $comunidad->nombre }}</h3>
