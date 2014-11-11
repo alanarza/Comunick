@@ -139,7 +139,7 @@
 
 					<div class="caption">
 						
-						<h3 data-toggle="modal" data-target="#myModal{{ $comunidad->id }}">{{ $comunidad->nombre }}</h3>
+						<h3 data-toggle="modal" data-target="#myModal{{ $comunidad->id }}"><center>{{ $comunidad->nombre }}</center></h3>
 						<!-- Button trigger modal -->
 						<!-- Modal -->
 						<div class="modal fade" id="myModal{{ $comunidad->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
