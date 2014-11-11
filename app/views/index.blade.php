@@ -147,16 +147,25 @@
 						    <div class="modal-content">
 						      <div class="modal-header">
 						        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						        <h4 class="modal-title" id="myModalLabel2">{{ $comunidad->nombre }}</h4>
+						        <h4 class="modal-title" id="myModalLabel2"><center>{{ $comunidad->nombre }}</center></h4>
 						      </div>
 						      <div class="modal-body">
-						        <img src="{{asset('images/BabyTux.png')}}" alt="...">
-						        <hr>
-						        Descripción
+						      	<div class="container-fluid">
+						      		<div class="col-sm-4">
+						        		<img src="{{asset('images/BabyTux.png')}}" alt="...">
+						        	</div>
+						    		<div class="col-sm-8" style="margin-top:45px;">
+						    			{{ $comunidad->descripcion }}
+						    		</div>
+						        <div class="col-md-12">
+						        	<hr>
+						        	Descripción
+						        </div>
+						      </div>
 						      </div>
 						      <div class="modal-footer">
 						        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-						        <button type="button" class="btn btn-primary">Entrar</button>
+						        <button type="button" class="btn btn-primary">Ver comunidad</button>
 						      </div>
 						    </div>
 						  </div>
