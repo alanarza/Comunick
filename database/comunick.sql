@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 14-10-2014 a las 17:34:39
+-- Tiempo de generación: 11-11-2014 a las 19:17:52
 -- Versión del servidor: 5.6.19-0ubuntu0.14.04.1
 -- Versión de PHP: 5.5.9-1ubuntu4.3
 
@@ -33,7 +33,20 @@ CREATE TABLE IF NOT EXISTS `comunidad` (
   `fecha_ini` date NOT NULL,
   `descripcion` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Volcado de datos para la tabla `comunidad`
+--
+
+INSERT INTO `comunidad` (`id`, `nombre`, `administrador`, `fecha_ini`, `descripcion`) VALUES
+(1, 'Rock Nacional', 1, '2007-02-13', 'Comunidad de aficionados amantes del rock nacional, somos muchos unete a nuestra comunidad'),
+(2, 'Tecno Bar', 1, '2010-06-02', 'Comunidad de aficionados amantes de la tecnologia, somos muchos unete a nuestra comunidad'),
+(3, 'Artes Visuales', 1, '2013-10-05', 'Comunidad de aficionados amantes de las artes visuales, somos muchos unete a nuestra comunidad'),
+(4, 'Compositores Musicales', 1, '2011-10-18', 'Comunidad de aficionados amantes de la composicion musical, somos muchos unete a nuestra comunidad'),
+(5, 'Cafe', 1, '2010-06-02', 'Comunidad de aficionados amantes del cafe, somos muchos unete a nuestra comunidad'),
+(6, 'Vicentico', 1, '2010-06-02', 'Comunidad de aficionados amantes de vicentico, somos muchos unete a nuestra comunidad'),
+(7, 'Pop Rock', 1, '2010-06-02', 'Comunidad de aficionados amantes del pop rock, somos muchos unete a nuestra comunidad');
 
 -- --------------------------------------------------------
 
@@ -94,17 +107,6 @@ CREATE TABLE IF NOT EXISTS `usuario_comunidad` (
   `comunidad` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
---Restricciones
-
-ALTER TABLE `usuario_comunidad`
-	ADD CONSTRAINT `fk_usuario` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`id`),
-	ADD CONSTRAINT `fk_comunidad` FOREIGN KEY (`comunidad`) REFERENCES `comunidad` (`id`);
-	
-ALTER TABLE `comu_post`
-	ADD CONSTRAINT `fk_usuario` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`id`),
-	ADD CONSTRAINT `fk_post` FOREIGN KEY (`post`) REFERENCES `post` (`id`),
-	ADD CONSTRAINT `fk_comunidad` FOREIGN KEY (`comunidad`) REFERENCES `comunidad` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
