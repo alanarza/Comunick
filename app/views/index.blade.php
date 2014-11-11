@@ -159,7 +159,7 @@
 						    		</div>
 						        <div class="col-md-12">
 						        	<hr>
-						        	Descripción
+						        	{{ $comunidad->descripcion_larga }}
 						        </div>
 						      </div>
 						      </div>

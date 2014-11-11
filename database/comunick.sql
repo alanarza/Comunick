@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 11-11-2014 a las 19:17:52
--- Versión del servidor: 5.6.19-0ubuntu0.14.04.1
--- Versión de PHP: 5.5.9-1ubuntu4.3
+-- Tiempo de generación: 11-11-2014 a las 20:27:35
+-- Versión del servidor: 5.5.40-0ubuntu0.14.04.1
+-- Versión de PHP: 5.5.9-1ubuntu4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS `comunidad` (
   `administrador` int(11) NOT NULL,
   `fecha_ini` date NOT NULL,
   `descripcion` text NOT NULL,
+  `descripcion_larga` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
@@ -39,14 +40,13 @@ CREATE TABLE IF NOT EXISTS `comunidad` (
 -- Volcado de datos para la tabla `comunidad`
 --
 
-INSERT INTO `comunidad` (`id`, `nombre`, `administrador`, `fecha_ini`, `descripcion`) VALUES
-(1, 'Rock Nacional', 1, '2007-02-13', 'Comunidad de aficionados amantes del rock nacional, somos muchos unete a nuestra comunidad'),
-(2, 'Tecno Bar', 1, '2010-06-02', 'Comunidad de aficionados amantes de la tecnologia, somos muchos unete a nuestra comunidad'),
-(3, 'Artes Visuales', 1, '2013-10-05', 'Comunidad de aficionados amantes de las artes visuales, somos muchos unete a nuestra comunidad'),
-(4, 'Compositores Musicales', 1, '2011-10-18', 'Comunidad de aficionados amantes de la composicion musical, somos muchos unete a nuestra comunidad'),
-(5, 'Cafe', 1, '2010-06-02', 'Comunidad de aficionados amantes del cafe, somos muchos unete a nuestra comunidad'),
-(6, 'Vicentico', 1, '2010-06-02', 'Comunidad de aficionados amantes de vicentico, somos muchos unete a nuestra comunidad'),
-(7, 'Pop Rock', 1, '2010-06-02', 'Comunidad de aficionados amantes del pop rock, somos muchos unete a nuestra comunidad');
+INSERT INTO `comunidad` (`id`, `nombre`, `administrador`, `fecha_ini`, `descripcion`, `descripcion_larga`) VALUES
+(1, 'Rock Nacional', 1, '2007-02-13', 'Comunidad de aficionados amantes del rock nacional, somos muchos unete a nuestra comunidad', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio. Pellentesque pharetra metus ut mauris sagittis facilisis. Etiam iaculis dui quis nibh suscipit, sit amet tincidunt metus cursus. Cras tincidunt imperdiet ligula sit amet fermentum. Nunc sit amet tempor purus, ac dignissim orci. Pellentesque consectetur fringilla eros in varius. Mauris magna nulla, cursus eget vulputate ut, egestas vitae lectus. Nullam egestas fermentum convallis. Donec ut pharetra erat.'),
+(2, 'Tecno Bar', 1, '2010-06-02', 'Comunidad de aficionados amantes de la tecnologia, somos muchos unete a nuestra comunidad', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio. Pellentesque pharetra metus ut mauris sagittis facilisis. Etiam iaculis dui quis nibh suscipit, sit amet tincidunt metus cursus. Cras tincidunt imperdiet ligula sit amet fermentum. Nunc sit amet tempor purus, ac dignissim orci. Pellentesque consectetur fringilla eros in varius. Mauris magna nulla, cursus eget vulputate ut, egestas vitae lectus. Nullam egestas fermentum convallis. Donec ut pharetra erat.'),
+(3, 'Artes Visuales', 1, '2013-10-05', 'Comunidad de aficionados amantes de las artes visuales, somos muchos unete a nuestra comunidad', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio. Pellentesque pharetra metus ut mauris sagittis facilisis. Etiam iaculis dui quis nibh suscipit, sit amet tincidunt metus cursus. Cras tincidunt imperdiet ligula sit amet fermentum. Nunc sit amet tempor purus, ac dignissim orci. Pellentesque consectetur fringilla eros in varius. Mauris magna nulla, cursus eget vulputate ut, egestas vitae lectus. Nullam egestas fermentum convallis. Donec ut pharetra erat.'),
+(4, 'Compositores Musicales', 1, '2011-10-18', 'Comunidad de aficionados amantes de la composicion musical, somos muchos unete a nuestra comunidad', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio. Pellentesque pharetra metus ut mauris sagittis facilisis. Etiam iaculis dui quis nibh suscipit, sit amet tincidunt metus cursus. Cras tincidunt imperdiet ligula sit amet fermentum. Nunc sit amet tempor purus, ac dignissim orci. Pellentesque consectetur fringilla eros in varius. Mauris magna nulla, cursus eget vulputate ut, egestas vitae lectus. Nullam egestas fermentum convallis. Donec ut pharetra erat.'),
+(5, 'Cafe', 1, '2010-06-02', 'Comunidad de aficionados amantes del cafe, somos muchos unete a nuestra comunidad', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio. Pellentesque pharetra metus ut mauris sagittis facilisis. Etiam iaculis dui quis nibh suscipit, sit amet tincidunt metus cursus. Cras tincidunt imperdiet ligula sit amet fermentum. Nunc sit amet tempor purus, ac dignissim orci. Pellentesque consectetur fringilla eros in varius. Mauris magna nulla, cursus eget vulputate ut, egestas vitae lectus. Nullam egestas fermentum convallis. Donec ut pharetra erat.'),
+(6, 'Vicentico', 1, '2010-06-02', 'Comunidad de aficionados amantes de vicentico, somos muchos unete a nuestra comunidad', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare vehicula nisi, at vehicula orci semper vel. Nunc eget nulla tincidunt, tempor lectus at, sollicitudin odio. Pellentesque pharetra metus ut mauris sagittis facilisis. Etiam iaculis dui quis nibh suscipit, sit amet tincidunt metus cursus. Cras tincidunt imperdiet ligula sit amet fermentum. Nunc sit amet tempor purus, ac dignissim orci. Pellentesque consectetur fringilla eros in varius. Mauris magna nulla, cursus eget vulputate ut, egestas vitae lectus. Nullam egestas fermentum convallis. Donec ut pharetra erat.');
 
 -- --------------------------------------------------------
 
