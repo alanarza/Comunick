@@ -138,7 +138,29 @@
 					<img src="{{asset('images/BabyTux.png')}}" alt="...">
 
 					<div class="caption">
-						<h3>{{ $comunidad->nombre }}</h3>
+						
+						<h3 data-toggle="modal" data-target="#myModal2">{{ $comunidad->nombre }}</h3>
+						<!-- Button trigger modal -->
+						<!-- Modal -->
+						<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						        <h4 class="modal-title" id="myModalLabel2">{{ $comunidad->nombre }}</h4>
+						      </div>
+						      <div class="modal-body">
+						        <img src="{{asset('images/BabyTux.png')}}" alt="...">
+						        <hr>
+						        Descripción
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+						        <button type="button" class="btn btn-primary">Entrar</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
 						<p>{{ $comunidad->descripcion }}</p>
 					</div>
 
