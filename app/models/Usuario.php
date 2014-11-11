@@ -1,6 +1,6 @@
 <?php
 
-class usuario extends Eloquent{
+class Usuario extends Eloquent{
 
 	protected $guarded = array();
 	public $timestamps = false;
