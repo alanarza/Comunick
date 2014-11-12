@@ -141,8 +141,6 @@
 					<div class="caption">
 						
 						<h3 data-toggle="modal" data-target="#myModal{{ $comunidad->id }}"><center><button class="btn btn-link">{{ $comunidad->nombre }}</button></center></h3>
-						<!-- Button trigger modal -->
-						<!-- Modal -->
 						<div class="modal fade" id="myModal{{ $comunidad->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
 						  <div class="modal-dialog">
 						    <div class="modal-content">
@@ -153,7 +151,7 @@
 						      <div class="modal-body">
 						      	<div class="container-fluid">
 						      		<div class="col-sm-4">
-						        		<img src="{{asset('images/BabyTux.png')}}" alt="...">
+						        		<img src='{{asset("images/$comunidad->nombre.jpg")}}' alt="...">
 						        	</div>
 						    		<div class="col-sm-8" style="margin-top:45px;">
 						    			{{ $comunidad->descripcion }}
@@ -171,7 +169,11 @@
 						    </div>
 						  </div>
 						</div>
-						<p>{{ $comunidad->descripcion }}</p>
+						<p>	
+							{{ $comunidad->descripcion }}
+
+							
+						</p>
 					</div>
 				</div>
 			</div>
