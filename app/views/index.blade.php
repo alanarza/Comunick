@@ -140,7 +140,7 @@
 
 					<div class="caption">
 						
-						<h3 data-toggle="modal" data-target="#myModal{{ $comunidad->id }}"><center><button class="btn btn-link">{{ $comunidad->nombre }}</button></center></h3>
+						<h3 data-toggle="modal" data-target="#myModal{{ $comunidad->id }}" style="margin-top:0px;"><center><button class="btn btn-link">{{ $comunidad->nombre }}</button></center></h3>
 						<div class="modal fade" id="myModal{{ $comunidad->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
 						  <div class="modal-dialog">
 						    <div class="modal-content">
