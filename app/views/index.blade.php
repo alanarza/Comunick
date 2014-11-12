@@ -169,11 +169,7 @@
 						    </div>
 						  </div>
 						</div>
-						<p>	
-							{{ $comunidad->descripcion }}
-
-							
-						</p>
+						<p>{{ $comunidad->descripcion }}</p>
 					</div>
 				</div>
 			</div>

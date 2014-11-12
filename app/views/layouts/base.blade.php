@@ -57,7 +57,7 @@
 <hr>
 	<footer>
 		<div class="container">
-			<p class="navbar-text">Copyright © 2001-2014 The Cnk Group</p>
+			<p class="navbar-text">Copyright © 2013-2014 - QsK Enterprise Inc.</p>
 		</div>
 	</footer>
 </div> <!--Fin del cuerpo de la pagina-->
