@@ -112,6 +112,7 @@
 						<input style="margin-bottom: 15px;" type="text" placeholder="Usuario" id="user" name="user">
 						<input style="margin-bottom: 15px;" type="password" placeholder="Contraseña" id="pass" name="pass">
 						<input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Ingresar">
+						<button class="btn btn-default">¿Olvidaste tu contraseña?
 					</form>
 				</ul>
 			</li>
@@ -125,8 +126,8 @@
 
 		<div class="jumbotron">
 		<h1>Comunick</h1>
-		  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-		  <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+		  <p>Comunick es una comunidad de comunidades. Aquí podrás encontrar y compartir información sobre cosas que te gustan y encontrar más gente como tú!</p>
+		  <p><a class="btn btn-primary btn-lg">Informarme más</a></p>
 		</div>
 
 	<div class="row">
@@ -135,11 +136,11 @@
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail">
 			  		
-					<img src="{{asset('images/BabyTux.png')}}" alt="...">
+					<img src='{{asset("images/$comunidad->nombre.jpg")}}'  style="margin-top:15px;" alt="...">
 
 					<div class="caption">
 						
-						<h3 data-toggle="modal" data-target="#myModal{{ $comunidad->id }}"><center>{{ $comunidad->nombre }}</center></h3>
+						<h3 data-toggle="modal" data-target="#myModal{{ $comunidad->id }}"><center><button class="btn btn-link">{{ $comunidad->nombre }}</button></center></h3>
 						<!-- Button trigger modal -->
 						<!-- Modal -->
 						<div class="modal fade" id="myModal{{ $comunidad->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
@@ -172,14 +173,11 @@
 						</div>
 						<p>{{ $comunidad->descripcion }}</p>
 					</div>
-
 				</div>
 			</div>
-
 		@endforeach
 	</div>
-
-	</div>
+  </div>
 </div>
 
 @stop
