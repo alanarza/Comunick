@@ -150,7 +150,11 @@
 					    	<img src='{{asset("images/Vicentico.jpg")}}' alt="..." style="height:245px;">
 						</div>
 					</div>
+
+					<h2><span class="label label-default">Fernando Valdebenito</span></h2>
 				</div>
+
+				
 
 				<div class="col-md-12">
 					<div class="list-group">
@@ -185,7 +189,9 @@
 				<div class="col-md-12">
 					<div class="panel panel-default" style="height:100px;">
 						<div class="panel-body">
-					    	<p>Aca va el estado</p>
+					    	<div class="well">
+								Look, I'm in a well!
+							</div>
 						</div>
 					</div>
 				</div>
