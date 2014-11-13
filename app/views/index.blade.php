@@ -106,15 +106,22 @@
 
 			<!--Dropdown de registrarse-->
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ingresar <strong class="caret"></strong></a>
-				<ul class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
-					<form method="post" action="controlador.php" accept-charset="UTF-8">
-						<input style="margin-bottom: 15px;" type="text" placeholder="Usuario" id="user" name="user">
-						<input style="margin-bottom: 15px;" type="password" placeholder="Contraseña" id="pass" name="pass">
-						<input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Ingresar">
-						<button class="btn btn-default">¿Olvidaste tu contraseña?
+				<a class="dropdown-toggle" href="#" data-toggle="dropdown">
+					Ingresar 
+					<strong class="caret"></strong>
+				</a>
+				<div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
+					<form method="post" action="#" accept-charset="UTF-8">
+										
+						<input style="margin-bottom: 15px; min-width:165px;" type="text" placeholder="Usuario" id="user" name="user">
+											
+						<input style="margin-bottom: 15px; min-width:165px;" type="password" placeholder="Contraseña" id="pass" name="pass">
+										
+						<input class="btn btn-primary btn-block btn-sm" type="submit" id="sign-in" value="Ingresar">
+						<button class="btn btn-default btn-sm">¿Olvidaste tu contraseña?</button>
+										
 					</form>
-				</ul>
+				</div>
 			</li>
 
 @stop
