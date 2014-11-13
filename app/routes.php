@@ -13,3 +13,7 @@
 
 Route::resource('/', 'IndexController');
 
+Route::get('/test', function()
+{
+    return View::make('personal');
+});
