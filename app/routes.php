@@ -13,5 +13,3 @@
 
 Route::resource('/', 'IndexController');
 
-
-Route::resource('tweets', 'TweetsController');
