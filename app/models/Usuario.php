@@ -1,10 +1,12 @@
 <?php
+use Illuminate\Auth\UserInterface;
 
-class Usuario extends Eloquent{
+class Usuario extends Eloquent extends UserInterface{
 
 	protected $guarded = array();
 	public $timestamps = false;
 	protected $table = 'usuario';
+	protected $fillable = array('nombre', 'correo', 'password');
 
 	public static $rules = array(
 
@@ -17,4 +19,13 @@ class Usuario extends Eloquent{
 		'ocupacion'	=> 'required'
 	);
 	
+	public function getAuthIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    public function getAuthPassword()
+    {
+        return $this->password;
+    }
 }
