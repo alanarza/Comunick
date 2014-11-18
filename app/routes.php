@@ -13,7 +13,7 @@
 
 Route::resource('/', 'IndexController');
 
-Route::post('login', function(){
+/*Route::post('login', function(){
  
 	if (Auth::attempt( array('usuario' => Input::get('usuario'), 'password' => Input::get('password') ), true ))
 	{
@@ -24,6 +24,14 @@ Route::post('login', function(){
         return Redirect::to('/')->with('mensaje_login', 'Ingreso invalido');
     }
  
+});*/
+
+//grupo de rutas que aceptan peticiones post, protegemos de ataques csrf
+Route::group(array('before' => 'csrf'), function()
+{
+ 
+    //http://localhost/crud_laravel/public/crud/show para crear post
+    Route::post('login', 'IndexController@login');
 });
 
 Route::get('/test', function()
