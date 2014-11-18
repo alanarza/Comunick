@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'tweets',
+			'database'  => 'comunick',
 			'username'  => 'root',
 			'password'  => 'udc',
 			'charset'   => 'utf8',
