@@ -30,8 +30,9 @@ Route::resource('/', 'IndexController');
 Route::group(array('before' => 'csrf'), function()
 {
  
-    //http://localhost/crud_laravel/public/crud/show para crear post
-    Route::post('login', 'IndexController@login');
+    //logueo de usuario
+    Route::post('login', 'UsuarioController@login');
+
 });
 
 Route::get('/test', function()
