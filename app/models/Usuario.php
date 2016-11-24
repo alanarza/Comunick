@@ -1,7 +1,7 @@
 <?php
 use Illuminate\Auth\UserInterface;
 
-class Usuario extends Eloquent extends UserInterface{
+class Usuario extends Eloquent implements UserInterface{
 
 	protected $guarded = array();
 	public $timestamps = false;
@@ -27,5 +27,20 @@ class Usuario extends Eloquent extends UserInterface{
     public function getAuthPassword()
     {
         return $this->password;
+    }
+
+    public function getRememberToken()
+    {
+        return ;
+    }
+
+    public function setRememberToken($id)
+    {
+        return ;
+    }
+
+    public function getRememberTokenName()
+    {
+        return ;
     }
 }

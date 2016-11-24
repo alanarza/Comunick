@@ -13,19 +13,6 @@
 
 Route::resource('/', 'IndexController');
 
-/*Route::post('login', function(){
- 
-	if (Auth::attempt( array('usuario' => Input::get('usuario'), 'password' => Input::get('password') ), true ))
-	{
-        return Redirect::to('personal');
-    }
-    else
-    {
-        return Redirect::to('/')->with('mensaje_login', 'Ingreso invalido');
-    }
- 
-});*/
-
 //grupo de rutas que aceptan peticiones post, protegemos de ataques csrf
 Route::group(array('before' => 'csrf'), function()
 {

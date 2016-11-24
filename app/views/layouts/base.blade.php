@@ -41,7 +41,7 @@
 
     		@if(Session::get('key'))
 
-				<!--parte de la navbar con opciones de usuario-->
+				{{ Auth::user()->nombre }}
 
 			@else
 
@@ -154,7 +154,7 @@
 							{{ Form::open(array('url' => 'login'))}}
 
 								{{ Form::label('usuario', 'Usuario'); }}
-								{{ Form::text('Usuario'); }}
+								{{ Form::text('usuario'); }}
 								{{ Form::label('password', 'Clave'); }}
 								{{ Form::password('password'); }}
 								<div class="button" style="padding-top: 10px">
@@ -178,6 +178,10 @@
 </div>
 <!--Fin de la navbar-->
 <div class="container">
+
+@if(Session::get('mensaje_login'))
+	<div class="alert alert-danger">{{ Session::get('mensaje_login') }}</div>
+@endif
 
 @yield('cuerpo')
 
